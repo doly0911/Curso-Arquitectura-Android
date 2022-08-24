@@ -1,4 +1,4 @@
-package com.anncode.offersandcoupons
+package com.anncode.offersandcoupons.model
 
 import com.google.gson.JsonObject
 import java.lang.Exception
@@ -72,7 +72,7 @@ class Coupon(couponJson: JsonObject?) : Serializable {
         var newString: String = ""
 
         for (i in 0..quantity){
-            newString += words.get(i) + " "
+            newString += words[i] + " "
         }
 
         return newString
